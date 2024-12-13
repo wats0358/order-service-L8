@@ -16,7 +16,7 @@ services:
       timeout: 10s
       retries: 5
     volumes:
-      - ../../rabbitmq_enabled_plugins:/etc/rabbitmq/enabled_plugins
+      - /mnt/c/Users/mapup/Documents/GitHub/rabbitmq_enabled_plugins:/etc/rabbitmq/enabled_plugins:ro
     networks:
       - backend_services
 networks:
